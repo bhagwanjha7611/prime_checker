@@ -1,11 +1,12 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
 
 int main() {
 	int num;
 	cin >> num;
 	int isPrime = 1;
-	for (int i=2; i<num; i++) {
+	for (int i=2; i<sqrt(num); i++) {
 		if (num % i == 0) {
 			isPrime = 0;
 		}
